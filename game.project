@@ -12,6 +12,6 @@ height = 640
 input_method = HiddenInputField
 
 [project]
-title = My Project
+title = PlayFab
 dependencies = https://github.com/PlayFab/LuaSdk/raw/master/Defold/PlayFabClientSdk.zip,https://github.com/andsve/dirtylarry/archive/master.zip
 
