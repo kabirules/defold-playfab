@@ -19,10 +19,13 @@ function init(self)
 	PlayFabClientApi.LoginWithCustomID(loginRequest, OnLoginSuccess, OnLoginFailed)		
 end
 
-function on_input(self, action_id, action) 
+function on_input(self, action_id, action)
+	self.input_default  = dirtylarry:input("username", action_id, action, gui.KEYBOARD_TYPE_DEFAULT, "username")
+	self.input_password = dirtylarry:input("password", action_id, action, gui.KEYBOARD_TYPE_PASSWORD, "password")
 	dirtylarry:button("myButton", action_id, action, function ()
 		print("button was pressed")
 	end)
+	print(action_id)
 end
 
 function final(self)
