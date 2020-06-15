@@ -8,9 +8,9 @@ mouse_trigger {
 }
 text_trigger {
   input: TEXT
-  action: "Text"
+  action: "text"
 }
 text_trigger {
   input: MARKED_TEXT
-  action: "Text"
+  action: "marked_text"
 }

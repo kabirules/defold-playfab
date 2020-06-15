@@ -23,9 +23,17 @@ function on_input(self, action_id, action)
 	self.input_default  = dirtylarry:input("username", action_id, action, gui.KEYBOARD_TYPE_DEFAULT, "username")
 	self.input_password = dirtylarry:input("password", action_id, action, gui.KEYBOARD_TYPE_PASSWORD, "password")
 	dirtylarry:button("myButton", action_id, action, function ()
-		print("button was pressed")
+		print(self.input_default)
+		print(self.input_password)
+		local registerRequest = {
+			-- See the API reference for LoginWithCustomID
+			TitleId = PlayFabClientApi.settings.titleId,
+			Email = "example@hotmail.com",
+			Password = self.input_password,
+			Username = self.input_default
+		}
+		PlayFabClientApi.RegisterPlayFabUser(registerRequest, OnRegisterSuccess, OnRegisterFailed)
 	end)
-	print(action_id)
 end
 
 function final(self)
@@ -43,4 +51,22 @@ function OnLoginFailed(error)
 	local message = message .. "Here's some debug information:\n"
 	local message = message .. error.GenerateErrorReport()
 	gui.set_text(pfTestOutput, message)
+end
+
+function OnRegisterSuccess(result)
+	--RegisterPlayFabUserResult
+	print(result.EntityToken)
+	print(result.PlayFabId)
+	print(result.SessionTicket)
+	print(result.SettingsForUser)
+	print(result.Username)
+end
+
+function OnRegisterFailed(error)
+	print(error.code)
+	print(error.error)
+	print(error.errorCode)
+	print(error.errorDetails)
+	print(error.errorMessage)
+	print(error.status)
 end

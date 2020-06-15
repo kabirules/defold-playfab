@@ -311,7 +311,7 @@ nodes {
 }
 nodes {
   position {
-    x: -13.775061
+    x: -0.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -346,7 +346,7 @@ nodes {
   id: "username/bg"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
-  pivot: PIVOT_W
+  pivot: PIVOT_CENTER
   adjust_mode: ADJUST_MODE_FIT
   parent: "username"
   layer: ""
@@ -361,12 +361,14 @@ nodes {
   clipping_visible: true
   clipping_inverted: false
   alpha: 1.0
+  overridden_fields: 1
+  overridden_fields: 14
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
 }
 nodes {
   position {
-    x: 13.0
+    x: -150.0
     y: 3.0
     z: 0.0
     w: 1.0
@@ -416,12 +418,13 @@ nodes {
   clipping_visible: true
   clipping_inverted: false
   alpha: 0.0
+  overridden_fields: 1
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
 }
 nodes {
   position {
-    x: 8.0
+    x: -150.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -471,12 +474,13 @@ nodes {
   clipping_visible: true
   clipping_inverted: false
   alpha: 1.0
+  overridden_fields: 1
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
 }
 nodes {
   position {
-    x: 4.0
+    x: -150.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -507,7 +511,7 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "Empty"
+  text: ""
   font: "larryfont"
   id: "username/content"
   xanchor: XANCHOR_NONE
@@ -527,12 +531,14 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "username/inner"
+  parent: "username/bg"
   layer: ""
   inherit_alpha: false
   alpha: 1.0
   outline_alpha: 1.0
   shadow_alpha: 1.0
+  overridden_fields: 1
+  overridden_fields: 8
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
@@ -578,7 +584,7 @@ nodes {
 }
 nodes {
   position {
-    x: -13.775061
+    x: 0.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -613,7 +619,7 @@ nodes {
   id: "password/bg"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
-  pivot: PIVOT_W
+  pivot: PIVOT_CENTER
   adjust_mode: ADJUST_MODE_FIT
   parent: "password"
   layer: ""
@@ -628,12 +634,14 @@ nodes {
   clipping_visible: true
   clipping_inverted: false
   alpha: 1.0
+  overridden_fields: 1
+  overridden_fields: 14
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
 }
 nodes {
   position {
-    x: 13.0
+    x: -150.0
     y: 3.0
     z: 0.0
     w: 1.0
@@ -683,12 +691,13 @@ nodes {
   clipping_visible: true
   clipping_inverted: false
   alpha: 0.0
+  overridden_fields: 1
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
 }
 nodes {
   position {
-    x: 8.0
+    x: -150.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -738,12 +747,13 @@ nodes {
   clipping_visible: true
   clipping_inverted: false
   alpha: 1.0
+  overridden_fields: 1
   template_node_child: true
   size_mode: SIZE_MODE_MANUAL
 }
 nodes {
   position {
-    x: 4.0
+    x: -150.0
     y: 0.0
     z: 0.0
     w: 1.0
@@ -774,7 +784,7 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "Empty"
+  text: ""
   font: "larryfont"
   id: "password/content"
   xanchor: XANCHOR_NONE
@@ -794,12 +804,14 @@ nodes {
   }
   adjust_mode: ADJUST_MODE_FIT
   line_break: false
-  parent: "password/inner"
+  parent: "password/bg"
   layer: ""
   inherit_alpha: false
   alpha: 1.0
   outline_alpha: 1.0
   shadow_alpha: 1.0
+  overridden_fields: 1
+  overridden_fields: 8
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0
