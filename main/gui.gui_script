@@ -41,8 +41,8 @@ function final(self)
 end
 
 function OnLoginSuccess(result)
-	local pfTestOutput = gui.get_node("myLabel/larrylabel")
-	gui.set_text(pfTestOutput, "Congratulations, you made your first successful API call!")
+	local s = gui.get_node("text")
+	gui.set_text(s,"Congratulations, you made your first successful API call!")
 end
 
 function OnLoginFailed(error)
